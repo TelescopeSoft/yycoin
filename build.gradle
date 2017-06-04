@@ -21,8 +21,32 @@ subprojects {
         mavenCentral()
     }
     dependencies {
+        compile 'org.springframework:spring-context:4.3.8.RELEASE'
+        compile 'org.springframework:spring-web:4.3.8.RELEASE'
+        compile 'org.springframework:spring-jdbc:4.3.8.RELEASE'
+        compile 'org.springframework:spring-orm:4.3.8.RELEASE'
+//        compile 'org.mybatis:mybatis-spring:jar:1.3.1'
+        compile group: 'org.mybatis', name: 'mybatis-spring', version: '1.3.1'
         compile fileTree(dir: 'D:/workspace_eclipse-SDK-3.3.2-win32_2/jar_depend/', include: '*.jar',
-                excludes:['com.springsource.org.apache.commons.attributes-2.2.0.jar',
+                excludes:[
+                        'org.springframework.aop.jar',
+                        'org.springframework.beans.jar',
+                        'org.springframework.context.jar',
+                        'org.springframework.context.support.jar',
+                        'org.springframework.core.jar',
+                        'org.springframework.jdbc-2.5.6.A.jar',
+                        'org.springframework.orm-2.5.6.A.jar',
+                        'org.springframework.test.jar',
+                        'org.springframework.transaction-2.5.6.A.jar',
+                        'org.springframework.web.jar',
+                        'org.springframework.web.servlet.jar',
+                        'spring-osgi-core.jar',
+                        'spring-osgi-extender.jar',
+                        'spring-osgi-io.jar',
+                        'spring-osgi-test.jar',
+                        'spring-osgi-web.jar',
+                        'spring-osgi-web-extender.jar',
+                        'com.springsource.org.apache.commons.attributes-2.2.0.jar',
                           'com.china.center.oa.budget.manager_1.0.0.jar',
                           'com.china.center.oa.budget.inner_1.0.0.jar',
                           'com.china.center.oa.budget.portal_1.0.0.jar',
